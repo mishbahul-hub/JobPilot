@@ -1,0 +1,32 @@
+{"id": "intern-blr", "query": "software engineering internship in Bengaluru", "rel": {"title": "intern", "location": "bangalore|bengaluru"}}
+{"id": "intern-student", "query": "internship for a computer science student", "rel": {"title": "intern"}}
+{"id": "intern-filter", "query": "software internship", "filters": {"location": "Bengaluru"}, "rel": {"title": "intern", "location": "bangalore|bengaluru"}}
+{"id": "fresher", "query": "entry level software job for a fresher graduate", "rel": {"title": "intern|graduate|fresher|junior|entry|trainee|associate|new grad|\\yi\\y|\\y1\\y|\\yii?\\y$"}}
+{"id": "data-eng", "query": "data engineer building ETL pipelines", "rel": {"title": "data engineer|etl|data platform|big data|data pipeline"}}
+{"id": "data-eng-tools", "query": "spark airflow and kafka pipelines", "rel": {"title": "data engineer|etl|big data|data platform|spark|kafka"}}
+{"id": "data-sci", "query": "data scientist", "rel": {"title": "data scien"}}
+{"id": "ml-paraphrase", "query": "someone who builds machine learning models", "rel": {"title": "machine learning|\\yml\\y|data scien|\\yai\\y|applied scien|deep learning"}}
+{"id": "genai", "query": "LLM and generative AI engineer", "rel": {"title": "llm|generative|gen ?ai|\\yai\\y|machine learning|\\yml\\y"}}
+{"id": "ai-agents", "query": "build AI agents with tool calling", "rel": {"title": "\\yai\\y|agent|llm|machine learning|\\yml\\y|generative"}}
+{"id": "py-backend", "query": "python backend developer", "rel": {"title": "python|backend|back end|back-end|django|fastapi|flask"}}
+{"id": "py-frameworks", "query": "Django or FastAPI developer", "rel": {"title": "python|backend|back end|django|fastapi|flask"}}
+{"id": "java", "query": "Java Spring Boot developer", "rel": {"title": "java\\y|spring"}}
+{"id": "java-hyd", "query": "senior java backend engineer in Hyderabad", "rel": {"title": "java\\y", "location": "hyderabad|telangana"}}
+{"id": "fullstack", "query": "full stack developer react node", "rel": {"title": "full ?-?stack|mern|mean stack"}}
+{"id": "frontend", "query": "frontend developer React", "rel": {"title": "front ?-?end|react|\\yui\\y|vue|angular|javascript"}}
+{"id": "ui-paraphrase", "query": "engineer who builds web user interfaces", "rel": {"title": "front ?-?end|react|\\yui\\y|vue|angular|javascript|web developer|full ?-?stack"}}
+{"id": "cloud", "query": "cloud engineer AWS Azure", "rel": {"title": "cloud|aws|azure|gcp|devops|platform|\\ysre\\y|infrastructure"}}
+{"id": "devops", "query": "devops and site reliability engineering", "rel": {"title": "devops|\\ysre\\y|site reliability|platform|infrastructure|cloud"}}
+{"id": "qa", "query": "QA automation testing engineer", "rel": {"title": "test|\\yqa\\y|quality|sdet|automation"}}
+{"id": "mobile", "query": "android or iOS mobile app developer", "rel": {"title": "android|\\yios\\y|mobile|flutter|react native|kotlin|swift"}}
+{"id": "analyst", "query": "data analyst SQL dashboards", "rel": {"title": "analyst|analytics|business intelligence|\\ybi\\y|power bi|tableau"}}
+{"id": "pm", "query": "technical project or product manager", "rel": {"title": "product manager|project manager|program manager|product owner|scrum"}}
+{"id": "design", "query": "UX designer", "rel": {"title": "design|\\yux\\y|\\yui\\y"}}
+{"id": "embedded", "query": "embedded systems firmware engineer", "rel": {"title": "embedded|firmware|hardware|\\yvlsi\\y|dsp"}}
+{"id": "security", "query": "cyber security engineer", "rel": {"title": "security|cyber|\\ysoc\\y|penetration|appsec"}}
+{"id": "amazon-sde", "query": "software development engineer at Amazon", "rel": {"title": "software|\\ysde\\y|engineer|developer", "company": "amazon|\\yadci\\y|\\yaws\\y"}}
+{"id": "gurugram", "query": "software developer jobs in Gurugram", "rel": {"title": "software|developer|engineer|\\ysde\\y", "location": "gurgaon|gurugram"}}
+{"id": "pune", "query": "developer jobs in Pune", "rel": {"title": "developer|engineer|software|\\ysde\\y", "location": "pune"}}
+{"id": "chennai-data", "query": "data jobs in Chennai", "rel": {"title": "data|analyst|analytics|machine learning", "location": "chennai"}}
+{"id": "py-lead", "query": "lead a team of python developers", "rel": {"title": "lead|manager|principal|architect|head", "title2": "python"}}
+{"id": "remote-swe", "query": "remote software engineer", "filters": {"remote": true}, "rel": {"title": "software|developer|engineer", "remote": true}}

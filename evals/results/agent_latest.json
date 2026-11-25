@@ -1,0 +1,831 @@
+{
+  "created_at": "2026-11-24T12:55:24+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "summary": {
+    "scenarios": 10,
+    "turns": 15,
+    "turn_pass_rate": 0.867,
+    "scenario_pass_rate": 0.8,
+    "check_pass_rate": 0.957,
+    "tool_accuracy": 1,
+    "grounded_rate": 0.867,
+    "judge_relevance": 4.8,
+    "judge_faithfulness": 4.3,
+    "latency_median_s": 11.3,
+    "latency_max_s": 24.8,
+    "errors": 2
+  },
+  "turns": [
+    {
+      "scenario": "backend-intern-blr",
+      "turn": 1,
+      "user": "I'm a final-year CS student who knows Python, FastAPI and SQL. Find me backend internships in Bengaluru.",
+      "error": "LLMUnavailable: ",
+      "checks": {
+        "no_error": false
+      },
+      "latency_s": null
+    },
+    {
+      "scenario": "data-eng-hyd",
+      "turn": 1,
+      "user": "I work with Spark and Airflow. Show me data engineering jobs in Hyderabad.",
+      "latency_s": 13.8,
+      "tools": [
+        "update_profile",
+        "search_jobs",
+        "get_job",
+        "get_job",
+        "get_job"
+      ],
+      "reply": "Here are some data engineering roles in Hyderabad matching your background with Spark and Airflow.",
+      "matches": [
+        {
+          "job_id": 570,
+          "title": "Data Engineer-Data Platforms-Azure",
+          "company": "IBM",
+          "fit_score": 8,
+          "why_it_fits": "Matches your Data Engineer background in Hyderabad with enterprise cloud platforms.",
+          "missing_skills": [
+            "Azure"
+          ],
+          "location": "Hyderabad, Telangana",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5974800076?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 12:37:54+00:00"
+        },
+        {
+          "job_id": 550,
+          "title": "Sr Specialist-Data Platform Engineer",
+          "company": "Charles Schwab India",
+          "fit_score": 8,
+          "why_it_fits": "A strong data platform engineering role based in Hyderabad.",
+          "missing_skills": [
+            "Cloud platforms"
+          ],
+          "location": "Hyderabad, Telangana",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975007996?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 18:19:44+00:00"
+        },
+        {
+          "job_id": 564,
+          "title": "ML Data Engineer",
+          "company": "S&P Global",
+          "fit_score": 7,
+          "why_it_fits": "Combines data engineering and ML in Hyderabad for an experienced profile.",
+          "missing_skills": [
+            "Machine Learning"
+          ],
+          "location": "Hyderabad, Telangana",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5974801229?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 12:39:50+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "match_title": true,
+        "match_location": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 4,
+        "faithfulness": 3,
+        "reason": "The jobs are correct data engineering roles in Hyderabad, but the justifications mention specific skills like Spark and enterprise cloud platforms that do not appear in the provided job snippets."
+      }
+    },
+    {
+      "scenario": "java-pune",
+      "turn": 1,
+      "user": "Java Spring Boot developer roles in Pune please.",
+      "latency_s": 10.1,
+      "tools": [
+        "update_profile",
+        "search_jobs"
+      ],
+      "reply": "Here are some Java and Spring Boot roles in Pune that match your profile.",
+      "matches": [
+        {
+          "job_id": 887,
+          "title": "FBS Agile Dev Team Member IV - Java with Angular",
+          "company": "Capgemini",
+          "fit_score": 9,
+          "why_it_fits": "Directly matches your Java and Spring Boot background for building enterprise applications in Pune.",
+          "missing_skills": [
+            "Angular"
+          ],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5972853734?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-20 18:18:31+00:00"
+        },
+        {
+          "job_id": 250,
+          "title": "Java Developer-Tool Engineering - SWF",
+          "company": "BMW TechWorks",
+          "fit_score": 8,
+          "why_it_fits": "A great fit for your Java engineering skills in Pune, focusing on tool engineering.",
+          "missing_skills": [],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975254478?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:25:25+00:00"
+        },
+        {
+          "job_id": 837,
+          "title": "Java Full Stack Developer- Assistant Vice President",
+          "company": "Citigroup",
+          "fit_score": 7,
+          "why_it_fits": "Senior Java development role in Pune utilizing your backend expertise.",
+          "missing_skills": [],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5973688802?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-21 12:35:11+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "match_title": true,
+        "match_location": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All recommended jobs are located in Pune and specifically require Java and Spring Boot or relevant backend Java expertise, and the explanations are fully supported by the provided text."
+      }
+    },
+    {
+      "scenario": "remote-only",
+      "turn": 1,
+      "user": "I only want fully remote software engineering jobs.",
+      "latency_s": 9.3,
+      "tools": [
+        "update_profile",
+        "search_jobs"
+      ],
+      "reply": "Here are some fully remote software engineering roles currently available in India.",
+      "matches": [
+        {
+          "job_id": 583,
+          "title": "AI Platform Engineer (India - Remote)",
+          "company": "DwellFi",
+          "fit_score": 9,
+          "why_it_fits": "Fully remote engineering role at an AI-native private markets startup offering 18 LPA.",
+          "missing_skills": [
+            "AI/ML",
+            "Python/TypeScript"
+          ],
+          "location": "India",
+          "remote": true,
+          "salary_min": 700000,
+          "salary_max": 1800000,
+          "url": "https://www.adzuna.in/details/5974643400?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 09:36:31+00:00"
+        },
+        {
+          "job_id": 126,
+          "title": "Senior Software Engineer",
+          "company": "G-P",
+          "fit_score": 8,
+          "why_it_fits": "Fully remote senior software engineering position at G-P.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": true,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975270770?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:40:56+00:00"
+        },
+        {
+          "job_id": 758,
+          "title": "Full-Stack Engineer (Node.js React/Next.js)",
+          "company": "99brightminds",
+          "fit_score": 8,
+          "why_it_fits": "Fully remote full-stack role focusing on Node.js and React/Next.js.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": true,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5974938794?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 16:52:05+00:00"
+        },
+        {
+          "job_id": 679,
+          "title": ".NET Tech Lead / Senior .NET Developer",
+          "company": "Jobgether",
+          "fit_score": 7,
+          "why_it_fits": "Fully remote senior backend/.NET opportunity in India.",
+          "missing_skills": [
+            ".NET"
+          ],
+          "location": "India",
+          "remote": true,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5973111758?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-20 22:35:08+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "match_remote": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 4,
+        "reason": "The recommended jobs accurately match the user's criteria for fully remote software engineering roles, though the first job description mentions a salary detail that was not explicitly present in the provided text snippet."
+      }
+    },
+    {
+      "scenario": "save-ordinal",
+      "turn": 1,
+      "user": "Show me full stack developer jobs.",
+      "latency_s": 14.2,
+      "tools": [
+        "search_jobs"
+      ],
+      "reply": "Here are a few full stack developer positions across India ranging from remote roles to engineering positions in Bangalore and Pune.",
+      "matches": [
+        {
+          "job_id": 753,
+          "title": "Senior Software Developer \u00e2\u0080\u0093 Full-Stack & Backend Technologies",
+          "company": "JKYog",
+          "fit_score": 9,
+          "why_it_fits": "A senior full-stack and backend-focused role with remote flexibility and a high compensation of 35 LPA.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": false,
+          "salary_min": 2500000,
+          "salary_max": 3500000,
+          "url": "https://www.adzuna.in/details/5975036581?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 18:36:26+00:00"
+        },
+        {
+          "job_id": 748,
+          "title": "Typescript/Javascript Full Stack Developer (Tool Development)",
+          "company": "BMW TechWorks",
+          "fit_score": 8,
+          "why_it_fits": "An exciting full stack developer position at BMW TechWorks based in Pune focusing on TypeScript and Node.js.",
+          "missing_skills": [
+            "TypeScript",
+            "Node.js",
+            "AWS"
+          ],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975261370?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:32:49+00:00"
+        },
+        {
+          "job_id": 645,
+          "title": "Full Stack Developer -GenAI Application",
+          "company": "NTT America, Inc.",
+          "fit_score": 8,
+          "why_it_fits": "A cutting-edge full stack developer role in Bangalore working on GenAI applications at NTT DATA.",
+          "missing_skills": [
+            "GenAI"
+          ],
+          "location": "Bangalore, Karnataka",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5973690971?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-21 12:37:09+00:00"
+        },
+        {
+          "job_id": 551,
+          "title": "Full Stack Developer",
+          "company": "Motorola Solutions",
+          "fit_score": 7,
+          "why_it_fits": "A standard full stack developer opportunity located in Bangalore with Motorola Solutions.",
+          "missing_skills": [],
+          "location": "Bangalore, Karnataka",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975007346?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 18:19:08+00:00"
+        },
+        {
+          "job_id": 811,
+          "title": "Full Stack Engineer",
+          "company": "Accenture",
+          "fit_score": 7,
+          "why_it_fits": "End-to-end full stack engineering role at Accenture covering both UX and backend development.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5974335760?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-21 22:14:56+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 4,
+        "reason": "The jobs are highly relevant to the request, but the first job's data does not mention the 35 LPA compensation claimed in the why_it_fits section."
+      }
+    },
+    {
+      "scenario": "save-ordinal",
+      "turn": 2,
+      "user": "Save the first one.",
+      "latency_s": 5.3,
+      "tools": [
+        "save_job"
+      ],
+      "reply": "I've saved the Senior Software Developer (Full-Stack & Backend Technologies) position at JKYog for you.",
+      "matches": [],
+      "checks": {
+        "expected_tools": true,
+        "no_forbidden_tools": true,
+        "saved_right_job": true,
+        "grounded": true
+      }
+    },
+    {
+      "scenario": "ordinal-out-of-range",
+      "turn": 1,
+      "user": "Find QA automation testing jobs.",
+      "latency_s": 24.8,
+      "tools": [
+        "search_jobs",
+        "update_profile"
+      ],
+      "reply": "Here are some QA automation testing roles that fit your profile:",
+      "matches": [
+        {
+          "job_id": 176,
+          "title": "Quality Engineer (Automation Testing)",
+          "company": "EquiLend",
+          "fit_score": 9,
+          "why_it_fits": "Matches your background in QA automation and is based in Bengaluru.",
+          "missing_skills": [],
+          "location": "Bangalore, Karnataka",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975266222?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:36:55+00:00"
+        },
+        {
+          "job_id": 742,
+          "title": "Sr. Test Engineer - Automation Testing Job",
+          "company": "YASH Technologies",
+          "fit_score": 8,
+          "why_it_fits": "A senior automation testing role focusing on test engineering.",
+          "missing_skills": [],
+          "location": "Indore, Madhya Pradesh",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5976089744?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-23 18:16:43+00:00"
+        },
+        {
+          "job_id": 221,
+          "title": "Quality Assurance Engineer",
+          "company": "Synechron",
+          "fit_score": 8,
+          "why_it_fits": "Combines manual and automation testing responsibilities.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975260133?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:31:28+00:00"
+        },
+        {
+          "job_id": 873,
+          "title": "AEM Automation Tester",
+          "company": "rightpoint",
+          "fit_score": 7,
+          "why_it_fits": "An automation testing position involving CMS platforms in Bangalore.",
+          "missing_skills": [
+            "CMS Platforms",
+            "AEM"
+          ],
+          "location": "Bangalore, Karnataka",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5973090209?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-20 22:17:30+00:00"
+        },
+        {
+          "job_id": 444,
+          "title": "QA Engineer",
+          "company": "Cutshort Lightning",
+          "fit_score": 7,
+          "why_it_fits": "A solid QA Engineer role focused on test design and execution in Bangalore.",
+          "missing_skills": [],
+          "location": "Bangalore, Karnataka",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5955651709?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-06 18:30:16+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All recommended jobs accurately match the requested QA automation testing role and the claims in the why_it_fits section are fully supported by the provided job data."
+      }
+    },
+    {
+      "scenario": "ordinal-out-of-range",
+      "turn": 2,
+      "user": "Save the 15th one.",
+      "latency_s": 3.2,
+      "tools": [],
+      "reply": "You mentioned the 15th job, but there are only 5 matches listed in the previous response. Please let me know which job number (1 to 5) you would like to save!",
+      "matches": [],
+      "checks": {
+        "no_forbidden_tools": true,
+        "grounded": true
+      }
+    },
+    {
+      "scenario": "job-details",
+      "turn": 1,
+      "user": "Find machine learning engineer jobs.",
+      "latency_s": 11.3,
+      "tools": [
+        "search_jobs",
+        "update_profile"
+      ],
+      "reply": "Here are some machine learning engineer openings that match your profile.",
+      "matches": [
+        {
+          "job_id": 906,
+          "title": "Machine Learning Engineer",
+          "company": "SAP",
+          "fit_score": 9,
+          "why_it_fits": "Directly matches your target title as a Machine Learning Engineer in Bangalore.",
+          "missing_skills": [],
+          "location": "Bangalore, Karnataka",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5972590935?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-20 12:30:15+00:00"
+        },
+        {
+          "job_id": 538,
+          "title": "ML Data Engineer",
+          "company": "S&P Global",
+          "fit_score": 8,
+          "why_it_fits": "Great fit focusing on machine learning and data engineering within an established global commodity insights team.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975248396?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:16:23+00:00"
+        },
+        {
+          "job_id": 55,
+          "title": "Machine Learning Engineer III",
+          "company": "Brightstar Lottery",
+          "fit_score": 8,
+          "why_it_fits": "Senior-level Machine Learning Engineer position located in Hyderabad.",
+          "missing_skills": [],
+          "location": "Hyderabad, Telangana",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5976089748?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-23 18:16:43+00:00"
+        },
+        {
+          "job_id": 236,
+          "title": "AI / ML Engineer",
+          "company": "Accenture",
+          "fit_score": 8,
+          "why_it_fits": "Broad AI/ML engineering role working with cloud AI services and applications.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975257482?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:28:48+00:00"
+        },
+        {
+          "job_id": 779,
+          "title": "AI/ML Engineer",
+          "company": "Sofueled",
+          "fit_score": 7,
+          "why_it_fits": "Exciting product engineering and AI role based in Goa.",
+          "missing_skills": [],
+          "location": "Panaji, North Goa",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5974641646?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 09:34:22+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "All recommended jobs accurately match the requested machine learning engineer role and are fully supported by the provided data snippets."
+      }
+    },
+    {
+      "scenario": "job-details",
+      "turn": 2,
+      "user": "Tell me more about the first one.",
+      "latency_s": 14.1,
+      "tools": [
+        "get_job"
+      ],
+      "reply": "SAP is hiring a Machine Learning Engineer in Bangalore, Karnataka. The role involves building impactful ML solutions, continuous learning, and great benefits. Would you like me to save this job for you?",
+      "matches": [
+        {
+          "job_id": 906,
+          "title": "Machine Learning Engineer",
+          "company": "SAP",
+          "fit_score": 9,
+          "why_it_fits": "Directly matches your target title as a Machine Learning Engineer in Bangalore.",
+          "missing_skills": [],
+          "location": "Bangalore, Karnataka",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5972590935?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-20 12:30:15+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 3,
+        "reason": "The relevance is high because the assistant identified the correct requested job, but faithfulness is moderate as the details about impactful ML solutions and great benefits are inferred rather than explicitly supported by the minimal snippet provided in the job data."
+      }
+    },
+    {
+      "scenario": "off-topic",
+      "turn": 1,
+      "user": "Write me a poem about the ocean.",
+      "latency_s": 3.0,
+      "tools": [],
+      "reply": "I only help with job search and careers, so I can't write a poem about the ocean. If you're looking for a tech job or exploring career options, let me know your skills and what city you'd like to work in!",
+      "matches": [],
+      "checks": {
+        "no_forbidden_tools": true,
+        "matches_presence": true,
+        "grounded": true
+      }
+    },
+    {
+      "scenario": "memory-across-conversations",
+      "turn": 1,
+      "user": "Quick intro: I'm a React and TypeScript frontend developer and I want to work in Pune.",
+      "latency_s": 13.8,
+      "tools": [
+        "update_profile",
+        "search_jobs",
+        "search_jobs"
+      ],
+      "reply": "Great to have you here! I've noted your profile as a React and TypeScript developer looking in Pune. Here are a couple of relevant local roles to check out:",
+      "matches": [
+        {
+          "job_id": 805,
+          "title": "Full-Stack .NET Engineer (React & Angular)",
+          "company": "Cordance",
+          "fit_score": 7,
+          "why_it_fits": "This Pune-based role features React in its stack, making use of your frontend background alongside backend responsibilities.",
+          "missing_skills": [
+            ".NET"
+          ],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": 1680,
+          "salary_max": 1680,
+          "url": "https://www.adzuna.in/details/5974340755?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-21 22:21:29+00:00"
+        },
+        {
+          "job_id": 748,
+          "title": "Typescript/Javascript Full Stack Developer (Tool Development)",
+          "company": "BMW TechWorks",
+          "fit_score": 6,
+          "why_it_fits": "Based in Pune and centered on TypeScript, this position builds on your core language skills.",
+          "missing_skills": [
+            "Node.js",
+            "AWS"
+          ],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975261370?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:32:49+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 4,
+        "faithfulness": 5,
+        "reason": "The suggested jobs are located in Pune and require React and TypeScript, fitting the user's criteria, and the explanations are fully supported by the provided job descriptions."
+      }
+    },
+    {
+      "scenario": "memory-across-conversations",
+      "turn": 2,
+      "user": "Find me jobs that fit me.",
+      "latency_s": 13.3,
+      "tools": [
+        "search_jobs"
+      ],
+      "reply": "Here are a few roles in Pune and remote that match your React and TypeScript profile:",
+      "matches": [
+        {
+          "job_id": 805,
+          "title": "Full-Stack .NET Engineer (React & Angular)",
+          "company": "Cordance",
+          "fit_score": 8,
+          "why_it_fits": "Located in Pune and incorporates React, aligning well with your frontend skill set.",
+          "missing_skills": [
+            ".NET",
+            "Angular"
+          ],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": 1680,
+          "salary_max": 1680,
+          "url": "https://www.adzuna.in/details/5974340755?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-21 22:21:29+00:00"
+        },
+        {
+          "job_id": 758,
+          "title": "Full-Stack Engineer (Node.js React/Next.js)",
+          "company": "99brightminds",
+          "fit_score": 7,
+          "why_it_fits": "A remote role utilizing React for someone with your TypeScript and frontend background.",
+          "missing_skills": [
+            "Node.js",
+            "Next.js"
+          ],
+          "location": "India",
+          "remote": true,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5974938794?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 16:52:05+00:00"
+        },
+        {
+          "job_id": 748,
+          "title": "Typescript/Javascript Full Stack Developer (Tool Development)",
+          "company": "BMW TechWorks",
+          "fit_score": 6,
+          "why_it_fits": "Based in Pune and specifically requires TypeScript expertise.",
+          "missing_skills": [
+            "AWS",
+            "Node.js"
+          ],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975261370?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:32:49+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "match_title": true,
+        "match_location": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 5,
+        "reason": "The suggested jobs match the user's React and TypeScript profile in Pune and remote locations, and the claims in the why_it_fits sections are fully supported by the provided job data."
+      }
+    },
+    {
+      "scenario": "dislike-then-alternatives",
+      "turn": 1,
+      "user": "Show me DevOps jobs.",
+      "latency_s": 7.6,
+      "tools": [
+        "search_jobs"
+      ],
+      "reply": "Here are a few DevOps and SRE roles currently available in India:",
+      "matches": [
+        {
+          "job_id": 667,
+          "title": "Sr. SRE Engineer",
+          "company": "Umanist Staffing LLC",
+          "fit_score": 9,
+          "why_it_fits": "Offers a strong DevOps and SRE focus with cloud infrastructure management at 22 LPA.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": false,
+          "salary_min": 1500000,
+          "salary_max": 2200000,
+          "url": "https://www.adzuna.in/details/5973499234?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-21 09:39:39+00:00"
+        },
+        {
+          "job_id": 220,
+          "title": "Senior DevOps Engineer",
+          "company": "Arena Club",
+          "fit_score": 8,
+          "why_it_fits": "A dedicated Senior DevOps role in a growing digital marketplace environment.",
+          "missing_skills": [],
+          "location": "India",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975260378?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:31:43+00:00"
+        },
+        {
+          "job_id": 138,
+          "title": "Lead DevSecops Engineer",
+          "company": "Global Payment Holding Company",
+          "fit_score": 8,
+          "why_it_fits": "Combines software development, CI/CD pipelines, and security operations in Pune.",
+          "missing_skills": [],
+          "location": "Pune, Maharashtra",
+          "remote": false,
+          "salary_min": null,
+          "salary_max": null,
+          "url": "https://www.adzuna.in/details/5975269690?utm_medium=api&utm_source=d1cf0634",
+          "posted_at": "2026-11-22 22:40:01+00:00"
+        }
+      ],
+      "checks": {
+        "expected_tools": true,
+        "matches_presence": true,
+        "grounded": true
+      },
+      "judge": {
+        "relevance": 5,
+        "faithfulness": 4,
+        "reason": "The suggested roles match the DevOps request and are located in India, but the first job mentions a salary of 22 LPA which is not present in the provided text data."
+      }
+    },
+    {
+      "scenario": "dislike-then-alternatives",
+      "turn": 2,
+      "user": "I'm not interested in the first one. Show me other options.",
+      "error": "LLMUnavailable: ",
+      "checks": {
+        "no_error": false
+      },
+      "latency_s": null
+    }
+  ]
+}
